@@ -7,6 +7,7 @@ Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
 """  # done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
+import math as math
 
 ########################################################################
 #
@@ -134,7 +135,7 @@ def swap_colors(circle, rectangle):
       :type rectangle: rg.Rectangle
     """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # done: 2. Implement and test this function.
     #          Tests have been written for you (above).
     #
     ####################################################################
@@ -146,6 +147,11 @@ def swap_colors(circle, rectangle):
     ####################################################################
     # ------------------------------------------------------------------
 
+    # swap_colors(circle, rectangle)
+
+    temp = circle.fill_color
+    circle.fill_color = rectangle.fill_color
+    rectangle.fill_color = temp
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
